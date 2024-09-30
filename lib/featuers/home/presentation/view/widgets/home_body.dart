@@ -14,18 +14,42 @@ class HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return   Padding(
       padding: const EdgeInsets.symmetric(horizontal: 22),
-      child: Column(
-        children: [
-          const SizedBox(height: 65,),
-          const RichTextWidget(),
-          const SizedBox(height: 15,),
-          ListViewHorizintalForNews(
-            items: itemsListHorizintal,
+      child: CustomScrollView(
+        slivers: [
+          const SliverToBoxAdapter(
+            child:  SizedBox(height: 65,),
           ),
-          const SizedBox(height: 2,),
-          Expanded(child: ListViewForNews(news: news,)),
+          const SliverToBoxAdapter(
+            child:  RichTextWidget(),
+          ),
+          const SliverToBoxAdapter(
+            child:  SizedBox(height: 15,),
+          ),
+          SliverToBoxAdapter(
+            child: ListViewHorizintalForNews(
+              items: itemsListHorizintal,
+            ),
+          ),
+          const SliverToBoxAdapter(
+            child:  SizedBox(height: 2,),
+          ),
+          SliverFillRemaining(
+            child: ListViewForNews(news: news,),
+          )
         ],
-      ),
+      )
     );
   }
 }
+// Column(
+//         children: [
+//           const SizedBox(height: 65,),
+//           const RichTextWidget(),
+//           const SizedBox(height: 15,),
+//           ListViewHorizintalForNews(
+//             items: itemsListHorizintal,
+//           ),
+//           const SizedBox(height: 2,),
+//           Expanded(child: ListViewForNews(news: news,)),
+//         ],
+//       ),
