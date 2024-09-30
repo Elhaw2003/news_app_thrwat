@@ -22,7 +22,7 @@ class ItemWidgetHorizintalView extends StatelessWidget {
             Image.asset(itemModelHorizintalView.image),
             Text(
               itemModelHorizintalView.title,
-              style: TextStyle(
+              style: const TextStyle(
                   color: AppColors.white,
                   fontSize: 15,
                   fontWeight: FontWeight.w600

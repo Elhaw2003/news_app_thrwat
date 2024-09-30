@@ -5,11 +5,10 @@ import '../../../../../core/utilies/app_texts.dart';
 
 class RichTextWidget extends StatelessWidget {
   const RichTextWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     return RichText(
-        text: TextSpan(
+        text: const TextSpan(
             text: AppTexts.news,
             style: TextStyle(
               color: AppColors.black,

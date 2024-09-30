@@ -6,4 +6,9 @@ class AppTexts{
  static const  String technology = "Technology";
  static const  String news= "News";
  static const  String cloud= "Cloud";
+ static const  String descSports= "This Description For Sports";
+ static const  String descGeneral= "This Description For General";
+ static const  String descBusiness= "This Description For Business";
+ static const  String descScience= "This Description For Science";
+ static const  String descTechnology= "This Description For Technology";
 }
