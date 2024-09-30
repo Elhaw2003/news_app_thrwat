@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app_thrwat/featuers/home/presentation/view/home_screen.dart';
 
 main(){
   runApp(const NewsAppThrwat());
@@ -8,8 +9,9 @@ class NewsAppThrwat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
