@@ -8,7 +8,7 @@ class ListViewHorizintalForNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100,
+      height: 90,
       child: ListView.separated(
         separatorBuilder: (context, index) => const SizedBox(width: 15,),
         itemCount: items.length,

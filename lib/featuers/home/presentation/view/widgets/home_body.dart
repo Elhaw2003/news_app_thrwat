@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_thrwat/core/utilies/app_colors.dart';
-import 'package:news_app_thrwat/core/utilies/app_texts.dart';
 import 'package:news_app_thrwat/featuers/home/data/lists/items_list_for_news.dart';
 import 'package:news_app_thrwat/featuers/home/data/lists/items_list_horizintal.dart';
 import 'package:news_app_thrwat/featuers/home/presentation/view/widgets/list_view_for_news.dart';
 import 'package:news_app_thrwat/featuers/home/presentation/view/widgets/list_view_horizintal_for_news.dart';
-import 'package:news_app_thrwat/featuers/home/presentation/view/widgets/rich_text_widget.dart';
-
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
 
@@ -17,13 +13,7 @@ class HomeBody extends StatelessWidget {
       child: CustomScrollView(
         slivers: [
           const SliverToBoxAdapter(
-            child:  SizedBox(height: 65,),
-          ),
-          const SliverToBoxAdapter(
-            child:  RichTextWidget(),
-          ),
-          const SliverToBoxAdapter(
-            child:  SizedBox(height: 15,),
+            child:  SizedBox(height: 10,),
           ),
           SliverToBoxAdapter(
             child: ListViewHorizintalForNews(
@@ -31,7 +21,7 @@ class HomeBody extends StatelessWidget {
             ),
           ),
           const SliverToBoxAdapter(
-            child:  SizedBox(height: 2,),
+            child:  SizedBox(height: 25,),
           ),
           SliverFillRemaining(
             child: ListViewForNews(news: news,),
@@ -41,15 +31,3 @@ class HomeBody extends StatelessWidget {
     );
   }
 }
-// Column(
-//         children: [
-//           const SizedBox(height: 65,),
-//           const RichTextWidget(),
-//           const SizedBox(height: 15,),
-//           ListViewHorizintalForNews(
-//             items: itemsListHorizintal,
-//           ),
-//           const SizedBox(height: 2,),
-//           Expanded(child: ListViewForNews(news: news,)),
-//         ],
-//       ),

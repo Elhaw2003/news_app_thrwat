@@ -19,7 +19,7 @@ class ItemWidgetForNews extends StatelessWidget {
         const SizedBox(height: 5,),
         Text(
           itemModelForNews.title,
-          style: TextStyle(
+          style: const TextStyle(
               color: AppColors.black,
               fontSize: 20,
               fontWeight: FontWeight.w700
@@ -28,7 +28,7 @@ class ItemWidgetForNews extends StatelessWidget {
         const SizedBox(height: 4,),
         Text(
           itemModelForNews.desc,
-          style: TextStyle(
+          style: const TextStyle(
               color: AppColors.grey,
               fontSize: 20,
               fontWeight: FontWeight.w500
