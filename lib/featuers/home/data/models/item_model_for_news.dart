@@ -1,7 +1,7 @@
 class ItemModelForNews{
-  final String image;
-  final String title;
-  final String desc;
+  final String? image;
+  final String? title;
+  final String? desc;
 
   ItemModelForNews({
 

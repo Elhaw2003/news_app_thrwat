@@ -11,4 +11,7 @@ class AppTexts{
  static const  String descBusiness= "This Description For Business";
  static const  String descScience= "This Description For Science";
  static const  String descTechnology= "This Description For Technology";
+ static const  String noTitleFounded= "No Title Founded";
+ static const  String noDescriptionFounded= "No Description Founded";
+ static const  String tryAgain= "Try Again";
 }
